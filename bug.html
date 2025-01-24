@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Incorrect way to select element using getElementsByTagName
+    let elements = document.getElementsByTagName("p");
+    elements.style.color = "blue"; //Error: elements is a HTMLCollection, not a single element
+  </script>
+</body>
+</html>
